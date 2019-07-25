@@ -1,6 +1,13 @@
 # Miscellaneous Commands
 Various commands that I find myself searching for far too often.
 
+## Git
+
+### Add sections of a file
+```
+git add --patch <filename>
+```
+
 ## Redirect stdout and stderr to File
 ```
 command >output.txt 2>&1
