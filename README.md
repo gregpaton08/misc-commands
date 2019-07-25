@@ -43,3 +43,21 @@ and kill the command with
 ```
 sudo kill -9 <pid>
 ```
+
+## Install Debian on Lenovo x120e
+For lack of a better place to note this...
+
+1. Boot into recovery mode.
+2. Find the name of the network interface with `ip link show`.
+3. Run `dhclient enp1s0` to get the ethernet working.
+4. Update the sources in `/etc/apt/sources.list`.
+    ```
+    deb http://ftp.us.debian.org/debian/ testing main non-free contrib
+    deb-src http://ftp.us.debian.org/debian/ testing main non-free contrib
+    ```
+5. Update and upgrade and install some firmware.
+    ```
+    apt-get update -y
+    apt-get upgrade -y
+    apt-get install firmware-amd-graphics
+    ```
