@@ -61,3 +61,20 @@ For lack of a better place to note this...
     apt-get upgrade -y
     apt-get install firmware-amd-graphics
     ```
+
+## Anaconda
+
+### Create a Python environment
+```
+conda -n dsfs python=3.7
+source activate dsfs
+source deactivate
+```
+### Create an R environment
+```
+conda create -n r_env r-essentials r-base
+# Activate the environment:
+conda activate r_env
+# List the packages in the environment:
+conda list
+```
