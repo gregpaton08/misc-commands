@@ -73,7 +73,7 @@ For lack of a better place to note this...
 
 ### Create a Python environment
 ```
-conda -n dsfs python=3.7
+conda create -n dsfs python=3.7
 source activate dsfs
 source deactivate
 ```
