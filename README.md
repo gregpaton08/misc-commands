@@ -77,6 +77,12 @@ conda create -n dsfs python=3.7
 source activate dsfs
 source deactivate
 ```
+
+### List Existing Environments
+```
+conda env list
+```
+
 ### Create an R environment
 ```
 conda create -n r_env r-essentials r-base
