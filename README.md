@@ -22,7 +22,10 @@ sudo gdd if=Downloads/debian-live-10.0.0-amd64-gnome.iso of=/dev/diskN bs=1M sta
 
 ## Check all open ports on a host
 ```
-sudo nmap -v -sT <host_name>
+# -v    verbose
+# -sT   scan TCP ports
+# -p-   scan all 65535 ports
+sudo nmap -v -sT -p- <host_name>
 ```
 
 ## Scan all IP Addresses on the Network in a Range
