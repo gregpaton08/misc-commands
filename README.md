@@ -10,7 +10,9 @@ git add --patch <filename>
 
 ## Redirect stdout and stderr to File
 ```
-command >output.txt 2>&1
+command > output.txt 2>&1
+# or as of Bash 4
+command &> output.txt
 ```
 
 ## Create a USB Installer for a Linux Distro
